@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+    background: url('background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); /* Background blur effect */
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container h1 {
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.login-container {
+    margin-top: 20px;
+}
+
+.login-container form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-container form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    border-color: #ff6f61;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background: #ff6f61;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #ff4b2b;
+    box-shadow: 0px 4px 20px rgba(255, 75, 43, 0.5);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 10px;
+}
+
+.divider span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.fb-login {
+    background: #4267B2;
+    color: white;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.fb-login:hover {
+    background: #365899;
+    box-shadow: 0px 4px 20px rgba(54, 88, 153, 0.5);
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.signup a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container {
+    animation: floating 4s ease-in-out infinite;
+}
